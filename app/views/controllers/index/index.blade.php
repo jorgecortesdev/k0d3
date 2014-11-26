@@ -1,3 +1,5 @@
+@extends('layouts.master')
+
 @section('javascript')
 {{ HTML::script('js/index.js') }}
 {{ HTML::script('//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js') }}

@@ -78,7 +78,14 @@ class TagsController extends \BaseController {
      */
     public function show($id)
     {
-        //
+        $tag = Tag::with('code')->find($id);
+        return View::make(
+            'controllers.tags.show',
+                array(
+                'tab'       => 'add-tag',
+                'tag'       => $tag
+            )
+        );
     }
 
     /**
